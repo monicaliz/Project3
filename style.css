@@ -1,0 +1,70 @@
+h1 {
+	font-family: 'Permanent Marker', cursive;
+	color: pink;
+	text-align: center;
+}
+
+h2 {
+	font-family: 'Permanent Marker', cursive;
+	color: #89cff0;
+}
+
+ul {
+	font-family: 'Old Standard TT', serif;
+	color: #89cff0;
+}
+
+p {
+	font-family: 'Old Standard TT', serif;
+	font-size: 20px;
+
+}
+ 
+ #list  {
+	font-family: 'Old Standard TT', serif;
+	color: ;
+}
+
+#box-one {
+	background-color: black;
+	padding: 10px; 
+}
+
+.col {
+	background-color: yellow; 
+  border: 1px solid rgba(86,61,124,.2);
+  }
+
+  .col-sm {
+  background-color: orange; 
+  border: 1px solid rgba(86,61,124,.2);
+  }
+
+/* NAV STYLES */
+
+#navbar {
+  overflow: hidden;
+  background-color: pink;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #89cff0;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #89cff0;
+  color: white;
+}
+
+

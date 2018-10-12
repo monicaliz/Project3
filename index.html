@@ -1,0 +1,142 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Old+Standard+TT|Permanent+Marker" rel="stylesheet">
+		<script src="jquery-3.3.1.js"></script>
+		<script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+
+	</head>
+
+
+	<body>
+		<div id ="box-one">
+		<h1> JQuery Features</h1>
+		</div>	
+
+		<!-- NAV BAR -->
+		<nav class=" navbar-expand-lg sticky-top navbar-light" id="navbar">
+			  <div class="collapse navbar-collapse" id="navbar">
+			    <div class="navbar-nav" id="navbar">
+			      <a class="nav-item nav-link active" href="/">Index</a>
+			      <a class="nav-item nav-link" href="sandbox.html">Sandbox</a>
+			      <a class="nav-item nav-link" href="about.html">About</a>
+			    </div>
+			  </div>
+		</nav>
+	
+
+		<!-- GRD EXAMPLES -->
+
+		<section style="padding: 20px;">
+			    <div class="container">
+					  <div class="row">
+					    <div class="col">
+					     	ONE	
+					    </div>
+					</div>
+		</section>
+		<section style="padding: 20px;" class="container">
+					  <div class="row">
+					    <div class="col-sm">
+					     	TWO	
+					    </div>
+					    <div class="col-sm">
+					      TWO
+					    </div>
+					  </div>
+		</section>
+		<section style="padding: 20px;" class="container">
+					  <div class="row">
+					    <div class="col">
+					     THREE
+					    </div>
+					    <div class="col">
+					     THREE
+					    </div>
+					    <div class="col">
+					     THREE
+					    </div>
+					  </div>
+					</div>
+		</section>
+
+		
+		<div id="content">
+			<!--- SYNTAX -->
+			<h2> Syntax</h2>
+			<p> $(selector).action(), where "$"" defines JQuery, "selector" finds HTML elements, and "action" performs an a JQuery action on element.</p>
+			<p> $(function(){ </br>
+
+	   				// jQuery methods go here...</br>
+
+				}); </p>
+
+			<!-- SELECTORS -->
+			<h2>Selectors</h2>
+			<h3>The Element Selector</h3>
+			<p>$("p"), selects all "p" elements on a page.</p>
+			<h3>The #id Selector</h3>
+			<p>$("#test")</p>
+			<h3> The .class Selector</h3>
+			<p>$(".test")</p>
+
+			<!-- EVENTS -->
+			<h2>Events</h2>
+			<p> $(selector).event(funcion), where "selctor" finds HTML elements, "event" is a vistor action that a webpage responds to and "function" defines what happens after an event fires.</p>
+			<p> $("p").click(function(){ </br>
+
+	   				// jQuery action goes here...</br>
+
+				}); </p>
+
+			<!--HIDE/SHOW--> 
+			<div>
+			<h2>Hide/Show</h2>
+
+			<script>
+					$(document).ready(function(){
+	    				$("#hide").click(function(){
+	       					 $(".ex").hide();
+	    				});
+	    				$("#show").click(function(){
+	        				$(".ex").show();
+	    				});
+					});
+			</script>
+
+			<p class="ex">I am a ghost.</p>
+
+			<button id="hide">Disappear</button>
+			<button id="show">Reappear</button>
+			</div>
+
+			<!--FADE-->
+			<h2>Fade</h2>
+
+			<script>
+					$(document).ready(function(){
+	    				$("#fade").click(function(){
+	        				$("#orange").fadeToggle(400);
+	        				$("#purple").fadeToggle(500);
+	        				$("#blue").fadeToggle(505);
+	    				});
+					});
+			</script>
+
+
+			<p>fadeToggle() with different speed parameters.</p>
+
+			<button id="fade">Fade IN/OUT</button><br><br>
+
+			<div id="orange" style="width:80px;height:80px;background-color: #BA5C12;"></div>
+			<br>
+			<div id="purple" style="width:80px;height:80px;background-color: #BF98A0;"></div>
+			<br>
+			<div id="blue" style="width:80px;height:80px;background-color: #222E50;"></div>
+		</div>
+
+		
+	</body>
+</html>
